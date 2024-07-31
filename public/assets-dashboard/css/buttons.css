@@ -1,0 +1,544 @@
+/* delete button  */
+
+.button {
+    padding: 7px 35px;
+    background-color: #000;
+    border: none;
+    font-size: 18px;
+    position: relative;
+    /* overflow: hidden; */
+    transition: 500ms;
+}
+
+.button span {
+    color: gray;
+    position: relative;
+    transition: 500ms;
+    transition-delay: 500ms;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.button:before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    left: 50%;
+    right: 50%;
+    top: 50%;
+    bottom: 50%;
+    transition: 500ms;
+    transition-delay: 500ms;
+    background-color: red;
+    box-shadow: 0 0 10px red,
+        0 0 30px red,
+        0 0 50px red;
+}
+
+.button div {
+    transition: 500ms;
+    position: absolute;
+    background-color: red;
+    box-shadow: 0 0 15px red, 0 0 30px red, 0 0 50px red;
+}
+
+.button .top {
+    width: 15px;
+    height: 2px;
+    top: 0;
+    left: 0;
+}
+
+.button .bottom {
+    width: 15px;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+}
+
+.button .left {
+    width: 2px;
+    height: 15px;
+    top: 0;
+    left: 0;
+}
+
+.button .right {
+    width: 2px;
+    height: 15px;
+    bottom: 0;
+    right: 0;
+}
+
+.button:hover {
+    color: #000;
+}
+
+.button:hover span {
+    color: #000;
+}
+
+.button:hover:before {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.button:hover .top,
+.button:hover .bottom {
+    width: 100%;
+}
+
+.button:hover .left,
+.button:hover .right {
+    height: 100%;
+}
+
+/* edit button  */
+
+.editButton {
+    padding: 7px 35px;
+    background-color: #000;
+    border: none;
+    font-size: 18px;
+    position: relative;
+    /* overflow: hidden; */
+    transition: 500ms;
+}
+
+.editButton span {
+    color: gray;
+    position: relative;
+    transition: 500ms;
+    transition-delay: 500ms;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.editButton:before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    left: 50%;
+    right: 50%;
+    top: 50%;
+    bottom: 50%;
+    transition: 500ms;
+    transition-delay: 500ms;
+    background-color: green;
+    box-shadow: 0 0 10px green,
+        0 0 30px green,
+        0 0 50px green;
+}
+
+.editButton div {
+    transition: 500ms;
+    position: absolute;
+    background-color: green;
+    box-shadow: 0 0 15px green, 0 0 30px green, 0 0 50px green;
+}
+
+.editButton .top {
+    width: 15px;
+    height: 2px;
+    top: 0;
+    left: 0;
+}
+
+.editButton .bottom {
+    width: 15px;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+}
+
+.editButton .left {
+    width: 2px;
+    height: 15px;
+    top: 0;
+    left: 0;
+}
+
+.editButton .right {
+    width: 2px;
+    height: 15px;
+    bottom: 0;
+    right: 0;
+}
+
+.editButton:hover {
+    color: #000;
+}
+
+.editButton:hover span {
+    color: #000;
+}
+
+.editButton:hover:before {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.editButton:hover .top,
+.editButton:hover .bottom {
+    width: 100%;
+}
+
+.editButton:hover .left,
+.editButton:hover .right {
+    height: 100%;
+}
+
+
+/* add class btn  */
+
+.cssbuttons-io-button {
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 80px;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #714da6;
+    overflow: hidden;
+    height: 2.8em;
+    padding-right: 3.3em;
+    cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+    right: 0.3em;
+    transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #7b52b9;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+}
+
+/* add blog btn  */
+
+.addBlogBtn {
+    --main-focus: #2d8cf0;
+    --font-color: #323232;
+    --bg-color-sub: #dedede;
+    --bg-color: #eee;
+    --main-color: #323232;
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.addBlogBtn,
+.addBlogBtn__icon,
+.addBlogBtn__text {
+    transition: all 0.3s;
+}
+
+.addBlogBtn .addBlogBtn__text {
+    transform: translateX(22px);
+    color: var(--font-color);
+    font-weight: 600;
+}
+
+.addBlogBtn .addBlogBtn__icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: var(--bg-color-sub);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addBlogBtn .svg {
+    width: 20px;
+    fill: var(--main-color);
+}
+
+.addBlogBtn:hover {
+    background: var(--bg-color);
+}
+
+.addBlogBtn:hover .addBlogBtn__text {
+    color: transparent;
+}
+
+.addBlogBtn:hover .addBlogBtn__icon {
+    width: 148px;
+    transform: translateX(0);
+}
+
+.addBlogBtn:active {
+    transform: translate(3px, 3px);
+    box-shadow: 0px 0px var(--main-color);
+}
+
+/* edit button of blogs  */
+
+.edit-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none !important;
+}
+
+.edit-svgIcon {
+    width: 17px;
+    transition-duration: 0.3s;
+}
+
+.edit-svgIcon path {
+    fill: white;
+}
+
+.edit-button:hover {
+    width: 90px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: rgb(2, 148, 239);
+    align-items: center;
+}
+
+.edit-button:hover .edit-svgIcon {
+    width: 20px;
+    transition-duration: 0.3s;
+    transform: translateY(60%);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.edit-button::before {
+    display: none;
+    content: "Edit";
+    color: white;
+    transition-duration: 0.3s;
+    font-size: 2px;
+}
+
+.edit-button:hover::before {
+    display: block;
+    padding-right: 10px;
+    font-size: 13px;
+    opacity: 1;
+    transform: translateY(0px);
+    transition-duration: 0.3s;
+}
+
+/* delete blog button  */
+
+.delete-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none !important;
+}
+
+.delete-svgIcon {
+    width: 17px;
+    transition-duration: 0.3s;
+}
+
+.delete-svgIcon path {
+    fill: white;
+}
+
+.delete-button:hover {
+    width: 90px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: rgb(255, 69, 69);
+    align-items: center;
+}
+
+.delete-button:hover .delete-svgIcon {
+    width: 20px;
+    transition-duration: 0.3s;
+    transform: translateY(60%);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.delete-button::before {
+    display: none;
+    content: "DELETE";
+    color: white;
+    transition-duration: 0.3s;
+    font-size: 2px;
+}
+
+.delete-button:hover::before {
+    display: block;
+    padding-right: 10px;
+    font-size: 13px;
+    opacity: 1;
+    transform: translateY(0px);
+    transition-duration: 0.3s;
+}
+
+/* popup animtion of create a blog  */
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.animated.faster {
+    -webkit-animation-duration: 500ms;
+    animation-duration: 500ms;
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+.fadeOut {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+/* upgrade pro button */
+
+.upgradeBtn {
+    width: fit-content;
+    display: flex;
+    padding: 0.8em 1.1em;
+    gap: 0.4rem;
+    border: none;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
+    background: linear-gradient(15deg,
+            #880088,
+            #aa2068,
+            #cc3f47,
+            #de6f3d,
+            #f09f33,
+            #de6f3d,
+            #cc3f47,
+            #aa2068,
+            #880088) no-repeat;
+    background-size: 300%;
+    background-position: left center;
+    transition: background 0.3s ease;
+    color: #fff;
+}
+
+.upgradeBtn:hover {
+    background-size: 320%;
+    background-position: right center;
+}
+
+.upgradeBtn:hover svg {
+    fill: #fff;
+}
+
+.upgradeBtn svg {
+    width: 23px;
+    fill: #f09f33;
+    transition: 0.3s ease;
+}
